@@ -1,4 +1,6 @@
-# README for Salon Booking App
+<p align="center">
+  <strong># README for Salon Booking App</strong>
+</p>
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
