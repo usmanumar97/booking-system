@@ -1,19 +1,19 @@
 <p align="center">
-  <h1><strong>README for Salon Booking App</strong></h1>
+  <strong><h1>README for Salon Booking App</h1></strong>
 </p>
-
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
 <p align="center">
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-      <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-      <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-      <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-    </p>
+  A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+  <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
 </p>
 
 ---
@@ -42,16 +42,16 @@ The purpose of this app is to create a **centralized platform** for customers an
 
 To get started with the Salon Booking App, follow these steps:
 
-\`\`\`bash
+```bash
 # Install dependencies
 $ npm install
-\`\`\`
+```
 
 ### Running the Application
 
 You can run the project in different modes:
 
-\`\`\`bash
+```bash
 # development mode
 $ npm run start
 
@@ -60,26 +60,26 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
-\`\`\`
+```
 
 ### Environment Setup
 
 Make sure to set up your environment variables in a `.env` file. This file should include:
 
-\`\`\`bash
+```bash
 DB_HOST=localhost
 DB_PORT=5432
 DB_USERNAME=your_db_username
 DB_PASSWORD=your_db_password
 DB_NAME=your_db_name
 PORT=3000
-\`\`\`
+```
 
 ### Database Configuration
 
-The application uses **PostgreSQL** as the database. The connection is configured in \`app.module.ts\` using TypeORM.
+The application uses **PostgreSQL** as the database. The connection is configured in `app.module.ts` using TypeORM.
 
-\`\`\`typescript
+```typescript
 TypeOrmModule.forRoot({
   type: 'postgres',
   host: process.env.DB_HOST,
@@ -90,7 +90,6 @@ TypeOrmModule.forRoot({
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
   synchronize: true,
 }),
-\`\`\`
+```
 
 ---
-
